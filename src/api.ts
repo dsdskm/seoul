@@ -13,7 +13,8 @@ export const requestSeoulApi = async () => {
   return res.data.DATA;
 };
 
-export const requestGeocodeApi = async (query: string) => {
+export const requestGeocodeApi = async (query: string, index: number) => {
+  console.log(`requestGeocodeApi ${query} index ${index}`);
   const res = await axios.get(`/map-geocode/v2/geocode`, {
     params: {
       query,
@@ -23,15 +24,25 @@ export const requestGeocodeApi = async (query: string) => {
       "X-NCP-APIGW-API-KEY": process.env.REACT_APP_NAVER_CLIENT_SECRET,
     },
   });
-
-  const addresses = res.data.addresses;
   let latitude = 0;
   let longitude = 0;
-  if (addresses) {
-    const address = addresses[0];
-    latitude = Number(address.x);
-    longitude = Number(address.y);
-    console.log(`address ${JSON.stringify(address)}`);
+  try {
+    const addresses = res.data.addresses;
+
+    if (addresses) {
+      const address = addresses[0];
+      if (address) {
+        if (address.x) {
+          latitude = Number(address.x);
+        }
+        if (address.y) {
+          longitude = Number(address.y);
+        }
+      }
+    }
+  } catch (e) {
+    console.log(`query ${query}`);
+    console.log(e);
   }
 
   return { latitude, longitude };
