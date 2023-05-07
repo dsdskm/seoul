@@ -101,3 +101,16 @@ export const getPlaceList = async () => {
   });
   return list;
 };
+
+export const update = async(list:PlaceData[])=>{
+  let batch = writeBatch(db);
+  for (let i = 0; i < list.length; i++) {
+    const place = list[i];
+    const ref = doc(db, COLLECTION_PLACE, place.id);
+      console.log(`place id ${place.id}`)
+    batch.update(ref, {
+      office_tel:""
+    });
+  }
+  await batch.commit();
+}

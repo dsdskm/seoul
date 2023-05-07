@@ -15,18 +15,18 @@ export const requestSeoulApi = async () => {
 
 export const requestGeocodeApi = async (query: string, index: number) => {
   console.log(`requestGeocodeApi ${query} index ${index}`);
-  const res = await axios.get(`/map-geocode/v2/geocode`, {
-    params: {
-      query,
-    },
-    headers: {
-      "X-NCP-APIGW-API-KEY-ID": process.env.REACT_APP_NAVER_CLIENT_ID,
-      "X-NCP-APIGW-API-KEY": process.env.REACT_APP_NAVER_CLIENT_SECRET,
-    },
-  });
   let latitude = 0;
   let longitude = 0;
   try {
+    const res = await axios.get(`/map-geocode/v2/geocode`, {
+      params: {
+        query,
+      },
+      headers: {
+        "X-NCP-APIGW-API-KEY-ID": process.env.REACT_APP_NAVER_CLIENT_ID,
+        "X-NCP-APIGW-API-KEY": process.env.REACT_APP_NAVER_CLIENT_SECRET,
+      },
+    });
     const addresses = res.data.addresses;
 
     if (addresses) {
