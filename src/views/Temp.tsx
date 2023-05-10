@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import { requestGeocodeApi, requestSeoulApi } from "api";
-import { addPlace, getPlaceList, update } from "api/firebaseApi";
+import { addPlace, getPlaceList, update } from "api/_firebaseApi";
 import { PlaceData } from "common/types";
 import { useState } from "react";
 

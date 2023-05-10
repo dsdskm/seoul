@@ -3,16 +3,39 @@ import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import { Box, Paper } from "@mui/material";
 import MapIcon from "@mui/icons-material/Map";
-import { useState } from "react";
-import Map from "./Map";
+import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
+import { useEffect, useState } from "react";
+import MapView from "./MapView";
+import PlaceListView from "./PlaceListView";
+import { getPlaceListFromFile } from "api/firebaseApi";
+import { useDispatch } from "react-redux";
+import { setPlaceList } from "state/states";
 const MENU_MAP = 0;
+const MENU_LIST = 1;
 const DashBoard = () => {
+  console.log(`DahsBoard`);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const loadList = async () => {
+      const placeList = await getPlaceListFromFile();
+      if (placeList) {
+        dispatch(setPlaceList(placeList));
+      }
+    };
+
+    loadList();
+  }, [dispatch]);
+
   const [menu, setMenu] = useState(MENU_MAP);
   const getContents = () => {
     let content = <></>;
     switch (menu) {
       case MENU_MAP:
-        content = <Map />;
+        content = <MapView />;
+        break;
+      case MENU_LIST:
+        content = <PlaceListView />;
         break;
       default:
         break;
@@ -34,6 +57,7 @@ const DashBoard = () => {
             }}
           >
             <BottomNavigationAction label="MAP" icon={<MapIcon />} />
+            <BottomNavigationAction label="LIST" icon={<FormatListBulletedIcon />} />
           </BottomNavigation>
         </Paper>
       </Box>
