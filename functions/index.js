@@ -1,3 +1,12 @@
+/*
+emulator test
+firebase emulators:start --only functions:<FUNCTION_NAME>
+
+deploy
+firebase debug deploy --only functions:<FUNCTION_NAME>
+firebase functions:log --only <FUNCTION_NAME>
+*/
+
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const fs = require("fs");
@@ -17,7 +26,7 @@ const DOCU_STORAGE = "storage";
 exports.refreshPlaceList = functions.https.onCall(async (request, response) => {
   console.log(`refreshPlaceList`);
   const init = async () => {
-    const snapshot = await db.collection("place").get();
+    const snapshot = await db.collection("place").where("show", "==", true).get();
     const list = [];
     snapshot.forEach((doc) => {
       const id = doc.id;
@@ -51,7 +60,7 @@ exports.refreshPlaceList = functions.https.onCall(async (request, response) => {
         action: "read",
         expires: "12-31-2345",
       });
-      console.log(`url ${url}`)
+      console.log(`url ${url}`);
       await db.collection(COLLECTION_CONFIG).doc(DOCU_STORAGE).update({
         placeList: url[0],
       });

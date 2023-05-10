@@ -1,3 +1,4 @@
+import { SEOUL_GU_ARR } from "common/constant";
 import { db } from "common/firebaseConfig";
 import { PlaceData } from "common/types";
 import { collection, doc, getDocs, query, writeBatch } from "firebase/firestore";
@@ -107,12 +108,35 @@ export const getPlaceList = async () => {
 export const update = async (list: PlaceData[]) => {
   let batch = writeBatch(db);
   for (let i = 0; i < list.length; i++) {
-    const place = list[i];
-    const ref = doc(db, COLLECTION_PLACE, place.id);
-    console.log(`place id ${place.id}`);
-    batch.update(ref, {
-      office_tel: "",
-    });
+    if (3000 <= i) {
+      const item = list[i];
+      const ref = doc(db, COLLECTION_PLACE, item.id);
+
+      if (!item.addr.includes("서울")) {
+        let contained = false;
+        for (let i = 0; i < SEOUL_GU_ARR.length; i++) {
+          const gu = SEOUL_GU_ARR[i];
+          if (item.addr.includes(gu)) {
+            contained = true;
+            break;
+          }
+        }
+        if (!contained) {
+          console.log(`item id ${item.id} addr ${item.addr}`);
+          batch.update(ref, {
+            show: false,
+          });
+        } else {
+          batch.update(ref, {
+            show: true,
+          });
+        }
+      } else {
+        batch.update(ref, {
+          show: true,
+        });
+      }
+    }
   }
   await batch.commit();
 };

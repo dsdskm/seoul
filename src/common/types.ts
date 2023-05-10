@@ -7,4 +7,5 @@ export interface PlaceData {
   addr: string;
   latitude: number;
   longitude: number;
+  show: boolean;
 }
