@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* SeoulParkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SeoulParkingTests.m */; };
+		01A24AFF2480D4CFC5921D69 /* libPods-SeoulParking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8DB1DFDE1D8A5A4F2EE5F0 /* libPods-SeoulParking.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4838493E608B9BF1212C56D0 /* libPods-SeoulParking-SeoulParkingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F21635D7663508A2C20B734 /* libPods-SeoulParking-SeoulParkingTests.a */; };
 		5763FC852BAC30C100E2834F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5763FC842BAC30C000E2834F /* GoogleService-Info.plist */; };
-		6FC8B14FA72B40EB4B76BBCD /* libPods-SeoulParking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD60A572A555227783B2DBE5 /* libPods-SeoulParking.a */; };
+		5763FC882BAC328200E2834F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5763FC872BAC328200E2834F /* FirebaseFirestore */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		DEA5E01E01F290820596FA1B /* libPods-SeoulParking-SeoulParkingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043B2616A2B2582700C58E18 /* libPods-SeoulParking-SeoulParkingTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,21 +32,21 @@
 		00E356EE1AD99517003FC87E /* SeoulParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeoulParkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* SeoulParkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeoulParkingTests.m; sourceTree = "<group>"; };
+		043B2616A2B2582700C58E18 /* libPods-SeoulParking-SeoulParkingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeoulParking-SeoulParkingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* SeoulParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeoulParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SeoulParking/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = SeoulParking/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SeoulParking/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SeoulParking/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SeoulParking/main.m; sourceTree = "<group>"; };
-		1F21635D7663508A2C20B734 /* libPods-SeoulParking-SeoulParkingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeoulParking-SeoulParkingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49E35B34B6FA3EE16DF27247 /* Pods-SeoulParking-SeoulParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingTests.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingTests/Pods-SeoulParking-SeoulParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29BF6331D4EBFF1970DDBED4 /* Pods-SeoulParking-SeoulParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingTests.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingTests/Pods-SeoulParking-SeoulParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5763FC842BAC30C000E2834F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SeoulParking/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		75C8CD6C5A876D3749698E78 /* Pods-SeoulParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.debug.xcconfig"; sourceTree = "<group>"; };
-		795CC31459CD3E90AF73097D /* Pods-SeoulParking-SeoulParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingTests.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingTests/Pods-SeoulParking-SeoulParkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		76542BCE264347175BA60841 /* Pods-SeoulParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.debug.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SeoulParking/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CFBACFB7D3AABC16828A990F /* Pods-SeoulParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.release.xcconfig"; sourceTree = "<group>"; };
-		DD60A572A555227783B2DBE5 /* libPods-SeoulParking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeoulParking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7BA76425F280C6D217A627 /* Pods-SeoulParking-SeoulParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking-SeoulParkingTests.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking-SeoulParkingTests/Pods-SeoulParking-SeoulParkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F20098CEF16A910E23C2AC49 /* Pods-SeoulParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeoulParking.release.xcconfig"; path = "Target Support Files/Pods-SeoulParking/Pods-SeoulParking.release.xcconfig"; sourceTree = "<group>"; };
+		FD8DB1DFDE1D8A5A4F2EE5F0 /* libPods-SeoulParking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SeoulParking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4838493E608B9BF1212C56D0 /* libPods-SeoulParking-SeoulParkingTests.a in Frameworks */,
+				DEA5E01E01F290820596FA1B /* libPods-SeoulParking-SeoulParkingTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FC8B14FA72B40EB4B76BBCD /* libPods-SeoulParking.a in Frameworks */,
+				5763FC882BAC328200E2834F /* FirebaseFirestore in Frameworks */,
+				01A24AFF2480D4CFC5921D69 /* libPods-SeoulParking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				DD60A572A555227783B2DBE5 /* libPods-SeoulParking.a */,
-				1F21635D7663508A2C20B734 /* libPods-SeoulParking-SeoulParkingTests.a */,
+				FD8DB1DFDE1D8A5A4F2EE5F0 /* libPods-SeoulParking.a */,
+				043B2616A2B2582700C58E18 /* libPods-SeoulParking-SeoulParkingTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +145,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				75C8CD6C5A876D3749698E78 /* Pods-SeoulParking.debug.xcconfig */,
-				CFBACFB7D3AABC16828A990F /* Pods-SeoulParking.release.xcconfig */,
-				49E35B34B6FA3EE16DF27247 /* Pods-SeoulParking-SeoulParkingTests.debug.xcconfig */,
-				795CC31459CD3E90AF73097D /* Pods-SeoulParking-SeoulParkingTests.release.xcconfig */,
+				76542BCE264347175BA60841 /* Pods-SeoulParking.debug.xcconfig */,
+				F20098CEF16A910E23C2AC49 /* Pods-SeoulParking.release.xcconfig */,
+				29BF6331D4EBFF1970DDBED4 /* Pods-SeoulParking-SeoulParkingTests.debug.xcconfig */,
+				9B7BA76425F280C6D217A627 /* Pods-SeoulParking-SeoulParkingTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "SeoulParkingTests" */;
 			buildPhases = (
-				5823DCDA1F35E76EEB6F4B3C /* [CP] Check Pods Manifest.lock */,
+				ABB7C7CC9CDD0A298AF8ED97 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				6495127C67BE3D3DFFF0E2B4 /* [CP] Embed Pods Frameworks */,
-				2997746C9403977887AA1919 /* [CP] Copy Pods Resources */,
+				D4D8F11C248F2A0B88109DA8 /* [CP] Embed Pods Frameworks */,
+				8D1366CC85DE0BF3BFF7770A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,19 +181,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SeoulParking" */;
 			buildPhases = (
-				500F7F34DB7084ED92A0A200 /* [CP] Check Pods Manifest.lock */,
+				ABF81616B92132C944118115 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				B3290128FA937BFAE8484D9C /* [CP] Embed Pods Frameworks */,
-				C7832DF8AAE7AC115BFB2CBF /* [CP] Copy Pods Resources */,
+				7D5DD3B6DF1515B887B25A1D /* [CP] Embed Pods Frameworks */,
+				DAE881758EA0F17936230ACB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SeoulParking;
+			packageProductDependencies = (
+				5763FC872BAC328200E2834F /* FirebaseFirestore */,
+			);
 			productName = SeoulParking;
 			productReference = 13B07F961A680F5B00A75B9A /* SeoulParking.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
+			packageReferences = (
+				5763FC862BAC328200E2834F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -269,7 +277,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		2997746C9403977887AA1919 /* [CP] Copy Pods Resources */ = {
+		7D5DD3B6DF1515B887B25A1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1366CC85DE0BF3BFF7770A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,29 +311,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulParking-SeoulParkingTests/Pods-SeoulParking-SeoulParkingTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		500F7F34DB7084ED92A0A200 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SeoulParking-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5823DCDA1F35E76EEB6F4B3C /* [CP] Check Pods Manifest.lock */ = {
+		ABB7C7CC9CDD0A298AF8ED97 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -330,7 +333,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6495127C67BE3D3DFFF0E2B4 /* [CP] Embed Pods Frameworks */ = {
+		ABF81616B92132C944118115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SeoulParking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D8F11C248F2A0B88109DA8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,24 +372,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulParking-SeoulParkingTests/Pods-SeoulParking-SeoulParkingTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B3290128FA937BFAE8484D9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SeoulParking/Pods-SeoulParking-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7832DF8AAE7AC115BFB2CBF /* [CP] Copy Pods Resources */ = {
+		DAE881758EA0F17936230ACB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,7 +422,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49E35B34B6FA3EE16DF27247 /* Pods-SeoulParking-SeoulParkingTests.debug.xcconfig */;
+			baseConfigurationReference = 29BF6331D4EBFF1970DDBED4 /* Pods-SeoulParking-SeoulParkingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -441,7 +449,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 795CC31459CD3E90AF73097D /* Pods-SeoulParking-SeoulParkingTests.release.xcconfig */;
+			baseConfigurationReference = 9B7BA76425F280C6D217A627 /* Pods-SeoulParking-SeoulParkingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -465,7 +473,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75C8CD6C5A876D3749698E78 /* Pods-SeoulParking.debug.xcconfig */;
+			baseConfigurationReference = 76542BCE264347175BA60841 /* Pods-SeoulParking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -495,7 +503,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFBACFB7D3AABC16828A990F /* Pods-SeoulParking.release.xcconfig */;
+			baseConfigurationReference = F20098CEF16A910E23C2AC49 /* Pods-SeoulParking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -570,6 +578,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -590,7 +609,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -639,6 +661,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-Fabric/React_Fabric.framework/Headers/react/renderer/components/view/platform/cxx",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
@@ -658,7 +691,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -697,6 +733,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5763FC862BAC328200E2834F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5763FC872BAC328200E2834F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5763FC862BAC328200E2834F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
