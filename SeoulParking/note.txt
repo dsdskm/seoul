@@ -1,0 +1,13 @@
+[React Native]
+절대 경로 설정
+router 설정
+redux 설치
+ios clean
+    pod deintegrate
+    pod cache clean --all
+    pod install
+
+[App]
+Firebase
+Map - Naver
+
